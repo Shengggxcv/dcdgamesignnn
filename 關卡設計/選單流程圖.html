@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>選單流程圖 Menu Flowchart</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 40px;
+      position: relative;
+    }
+    h1 {
+      font-size: 40px;
+      color: #e76f51;
+      margin-bottom: 0;
+    }
+    .subtitle {
+      font-size: 20px;
+      color: #d19a7f;
+      margin-bottom: 40px;
+    }
+
+    .flowchart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .node {
+      padding: 12px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      white-space: nowrap;
+    }
+
+    .setting { background-color: #a8dadc; }
+    .start { background-color: #ffe066; }
+    .exit { background-color: #90e0ef; }
+    .danger { background-color: #ef233c; color: white; }
+    .info { background-color: #edf2f4; }
+    .highlight { background-color: #d0f4de; }
+
+    .arrow {
+      width: 40px;
+      height: 20px;
+      border-bottom: 2px solid #000;
+      border-left: 2px solid #000;
+      transform: rotate(-45deg);
+      margin: auto;
+    }
+
+    .cat-icon {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      width: 60px;
+    }
+
+    .falling-character {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 70px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>選單流程圖</h1>
+<div class="subtitle">Menu Flowchart</div>
+
+<div class="flowchart">
+  <div class="row">
+    <div class="node info">按鍵設定</div>
+    <div class="node setting">設定</div>
+    <div class="node start">開始遊戲</div>
+    <div class="node exit">離開遊戲</div>
+    <div class="node danger">開關遊戲</div>
+    <div class="node info">ESC</div>
+  </div>
+
+  <div class="row">
+    <div class="node setting">聲音設定</div>
+    <div class="node setting">介面設定</div>
+    <div class="node start">新存檔</div>
+    <div class="node start">載入存檔</div>
+  </div>
+
+  <div class="row">
+    <div class="node info">字幕開關</div>
+    <div class="node info">字體大小</div>
+    <div class="node info">顏色對比</div>
+  </div>
+
+  <div class="row">
+    <div class="node highlight">序章：迷霧之初<br>（夢境起點）</div>
+    <div class="node info">返回主選單</div>
+  </div>
+
+  <div class="row">
+    <div class="node info">對話、移動、劇情操作</div>
+    <div class="node info">選項觸發 → 記憶片段</div>
+  </div>
+</div>
+
+<!-- 裝飾角色圖片 -->
+<img class="cat-icon" src="your-image-path/cat.png" alt="黑貓">
+<img class="falling-character" src="your-image-path/fall.png" alt="跌倒人物">
+
+</body>
+</html>

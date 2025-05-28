@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>基本資料 - Basic Information</title>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f7f9fb;
+            color: #2c3e50;
+            padding: 40px;
+        }
+        h1 {
+            color: #e67e22;
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+        .subtitle {
+            font-size: 20px;
+            color: #e67eae;
+            margin-bottom: 30px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .block {
+            flex: 1 1 300px;
+        }
+        .block h2 {
+            font-size: 22px;
+            color: #1d4ed8;
+            margin-bottom: 10px;
+        }
+        .block h2::before {
+            content: "●";
+            color: #3b82f6;
+            margin-right: 10px;
+        }
+        .block p, .block li {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .highlight-orange {
+            color: #f39c12;
+        }
+        .highlight-pink {
+            color: #e67eae;
+        }
+    </style>
+</head>
+<body>
+
+<h1>基本資料</h1>
+<div class="subtitle">Basic information</div>
+
+<div class="row">
+    <div class="block">
+        <h2>遊戲規格</h2>
+        <ul>
+            <li>遊戲平台：<span class="highlight-orange">PC（Steam）</span>。</li>
+            <li>類型：<span class="highlight-orange">2D 橫向冒險解謎</span>＋<span class="highlight-orange">劇情互動</span>。</li>
+            <li>遊玩時間：<span class="highlight-orange">約 3~4 小時</span>。</li>
+            <li>美術風格：<span class="highlight-orange">水彩夢境風</span>＋<span class="highlight-orange">手繪角色立繪</span>。</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h2>遊戲主題發想</h2>
+        <p>
+            本作以「<span class="highlight-pink">記憶</span>」與「<span class="highlight-pink">創傷修復</span>」為核心，
+            透過森林中的<span class="highlight-orange">五大場景</span>象徵人生不同階段與內在困境，
+            引導玩家與角色<span class="highlight-orange">共同面對過去與選擇未來</span>。
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="block" style="flex: 1 1 100%;">
+        <h2>遊戲特色</h2>
+        <ul>
+            <li><span class="highlight-orange">夢境世界</span>與<span class="highlight-orange">情緒互動</span>機制。</li>
+            <li>角色對話<span class="highlight-orange">選項影響</span>劇情分歧。</li>
+            <li>多象徵關卡<span class="highlight-orange">融合心理主題</span>。</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+

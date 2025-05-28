@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>遊戲設計 - 記憶之森</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9fb;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .left, .right {
+      flex: 1 1 45%;
+    }
+    h1 {
+      color: #de704e;
+      font-size: 2.8em;
+      margin-bottom: 0;
+    }
+    h2 {
+      color: #4a6484;
+      font-size: 1.4em;
+    }
+    .section {
+      margin-bottom: 2em;
+    }
+    .dot {
+      color: #4a6484;
+      font-weight: bold;
+    }
+    .highlight {
+      color: #de704e;
+    }
+    .char-container {
+      display: flex;
+      gap: 1em;
+      margin-top: 2em;
+    }
+    .char {
+      text-align: center;
+    }
+    .char img {
+      width: 120px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .logo img {
+      max-width: 80%;
+    }
+    .cat {
+      position: fixed;
+      bottom: 1em;
+      left: 1em;
+      width: 60px;
+    }
+    .corner-img {
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="left">
+    <h1>遊戲設計</h1>
+    <p style="color:#de704e; margin-top: 0;">Game design</p>
+
+    <div class="section">
+      <h2><span class="dot">●</span> 劇情大綱</h2>
+      <p>中文標題「<strong>記憶之森</strong>」：<span class="highlight">筆刷感手寫字，水彩暈染效果</span>。<br>
+        英文標題「The Forest of Memory」：手寫字融合樹枝。</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="dot">●</span> 關卡全局</h2>
+      <p>主畫面：<span class="highlight">懸浮感森林</span>主視覺 + 開始 / 載入 / 設定選項。<br>
+        對話框：手繪書頁風格。<br>
+        背包與陣列系統：<span class="highlight">以樹葉分類</span>。</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="dot">●</span> 關卡說明</h2>
+      <p>
+        米亞：洋裝造型，淡藍偏白色頭髮。<br>
+        琥珀：金眼黑貓，米亞髮色項圈。<br>
+        影子：未知。
+      </p>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="logo">
+      <img src="logo_placeholder.png" alt="記憶之森 The Forest of Memory">
+    </div>
+    <div class="char-container">
+      <div class="char">
+        <img src="mia_placeholder.jpg" alt="米亞">
+        <p>米亞</p>
+      </div>
+      <div class="char">
+        <img src="amber_cat_placeholder.jpg" alt="琥珀">
+        <p>琥珀</p>
+      </div>
+      <div class="char">
+        <img src="shadow_placeholder.jpg" alt="影子">
+        <p>影子</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<img src="cat_icon.png" alt="黑貓" class="cat">
+<img src="corner_char.png" alt="右上角色" class="corner-img">
+</body>
+</html>

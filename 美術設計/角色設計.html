@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>角色設計 - 記憶之森</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .container {
+      max-width: 1080px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: #fff;
+    }
+    .title {
+      font-size: 36px;
+      color: #dd6233;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      color: #dd6233;
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .design-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .character-img {
+      max-width: 160px;
+      flex: 1 1 160px;
+    }
+    .character-img img {
+      width: 100%;
+      border-radius: 10px;
+      background: #eef1f5;
+      padding: 10px;
+    }
+    .corner-art {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      width: 100px;
+    }
+    .black-cat {
+      position: fixed;
+      bottom: 10px;
+      left: 20px;
+      width: 60px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title">角色設計</div>
+  <div class="subtitle">Character design</div>
+
+  <img class="corner-art" src="corner-character.png" alt="Corner Art" />
+  <img class="black-cat" src="black-cat.png" alt="Black Cat" />
+
+  <div class="design-wrap">
+    <div class="character-img"><img src="front-view.png" alt="正面視角"></div>
+    <div class="character-img"><img src="side-view.png" alt="側面視角"></div>
+    <div class="character-img"><img src="back-view.png" alt="背面視角"></div>
+    <div class="character-img"><img src="cat.png" alt="貓"></div>
+    <div class="character-img"><img src="pose-view.png" alt="手拿書動作"></div>
+  </div>
+</div>
+</body>
+</html>

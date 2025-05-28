@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>聲音設計 - 記憶之森</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fb;
+      color: #333;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+      background-color: #fff;
+      position: relative;
+    }
+    .title {
+      font-size: 36px;
+      color: #e56733;
+      font-weight: 700;
+    }
+    .subtitle {
+      color: #e56733;
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #275fa0;
+      font-size: 22px;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+    }
+    h2::before {
+      content: "●";
+      color: #275fa0;
+      margin-right: 10px;
+    }
+    ul {
+      padding-left: 24px;
+      line-height: 1.8;
+    }
+    ul li span.orange {
+      color: #e56733;
+      font-weight: bold;
+    }
+    .music-images {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin-top: 40px;
+      gap: 20px;
+    }
+    .music-images img {
+      max-height: 180px;
+    }
+    .corner-art {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      width: 80px;
+    }
+    .black-cat {
+      position: fixed;
+      bottom: 15px;
+      left: 20px;
+      width: 60px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title">聲音設計</div>
+  <div class="subtitle">Sound design</div>
+
+  <img class="corner-art" src="corner-fall.png" alt="corner art" />
+  <img class="black-cat" src="black-cat.png" alt="black cat" />
+
+  <h2>音樂設計</h2>
+  <ul>
+    <li>使用鋼琴、提琴與柔和合成器，風格偏向 <span class="orange">Lo-fi 與治癒系</span>。</li>
+    <li>每個區域皆有<span class="orange">主題音樂</span>，並於關鍵回憶觸發時使用主旋律變奏。</li>
+  </ul>
+
+  <h2>音效規劃</h2>
+  <ul>
+    <li><span class="orange">探索音效</span>：腳步聲、草葉摩擦、水聲等。</li>
+    <li><span class="orange">特效音效</span>：碎片出現、記憶播放、影子逼近。</li>
+    <li><span class="orange">UI 音效</span>：柔和點擊、選單切換聲。</li>
+  </ul>
+
+  <div class="music-images">
+    <img src="music-note.png" alt="音符" />
+    <img src="cello.png" alt="大提琴" />
+    <img src="piano.png" alt="鋼琴" />
+  </div>
+</div>
+</body>
+</html>

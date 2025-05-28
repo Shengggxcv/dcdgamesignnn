@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>記憶之森 The Forest of Memory</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpg'); /* 這裡換成你的封面圖檔路徑 */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      font-family: 'Noto Serif TC', serif;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); /* 微微的暗色罩層讓字更清楚 */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+
+    .title {
+      font-size: 64px;
+      animation: float 4s ease-in-out infinite;
+      letter-spacing: 8px;
+    }
+
+    .subtitle {
+      font-size: 36px;
+      font-family: 'Courier New', Courier, monospace;
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    .credits {
+      font-size: 20px;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+<div class="overlay">
+  <div class="title"><a href="目錄.html"> 記憶之森</a></div>
+  <div class="subtitle">The Forest of Memory</div>
+
+  <div class="credits">
+    指導老師：劉晉彰 教授<br />
+    團隊：邱泓霖、宋皓宇、林宜葶、許宇勝、紀宥成
+  </div>
+</div>
+</body>
+</html>

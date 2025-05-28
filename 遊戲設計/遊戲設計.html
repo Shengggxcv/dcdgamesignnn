@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>遊戲設計 - Game Design</title>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f7f9fb;
+            color: #2c3e50;
+            padding: 40px;
+        }
+        h1 {
+            color: #e67e22;
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+        .subtitle {
+            font-size: 20px;
+            color: #e67eae;
+            margin-bottom: 30px;
+        }
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .block {
+            flex: 1 1 300px;
+        }
+        .block h2 {
+            font-size: 22px;
+            color: #1d4ed8;
+            margin-bottom: 10px;
+        }
+        .block h2::before {
+            content: "●";
+            color: #3b82f6;
+            margin-right: 10px;
+        }
+        .block p, .block li {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .highlight-orange {
+            color: #f39c12;
+        }
+        .highlight-pink {
+            color: #e67eae;
+        }
+    </style>
+</head>
+<body>
+
+<h1>遊戲設計</h1>
+<div class="subtitle">Game design</div>
+
+<div class="section">
+    <div class="block">
+        <h2>玩法機制</h2>
+        <ul>
+            <li>主要為橫向步行<span class="highlight-orange">探索、解謎、與 NPC 互動</span>。</li>
+            <li>特殊機制：<span class="highlight-orange">心靈碎片收集</span>、<span class="highlight-orange">情緒對話選項</span>、<span class="highlight-orange">象徵性解謎</span>。</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h2>遊戲操作</h2>
+        <ul>
+            <li><span class="highlight-orange">W/A/S/D</span>：移動。</li>
+            <li><span class="highlight-orange">E</span>：互動／選擇。</li>
+            <li><span class="highlight-orange">ESC</span>：暫停與設定。</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <div class="block">
+        <h2>物件列表</h2>
+        <ul>
+            <li>記憶碎片：<span class="highlight-orange">觸發過去回憶</span>。</li>
+            <li>鏡子：<span class="highlight-orange">觀看真實自我</span>。</li>
+            <li>鐘錶零件：<span class="highlight-orange">影響最終選擇劇情</span>。</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <h2>流程圖</h2>
+        <ul>
+            <li>1. 晨曦樹林 → 2. 迷霧溪谷 → 3. 鏡影湖畔</li>
+            <li>→ 4. 暗影高地 → 5. 時鐘塔（最終抉擇）</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

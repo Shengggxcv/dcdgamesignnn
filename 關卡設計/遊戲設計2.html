@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>遊戲設計 - Game Design</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #f4f6f9;
+      color: #2c3e50;
+      padding: 40px 60px;
+    }
+    h1 {
+      font-size: 42px;
+      color: #e67e22;
+      margin-bottom: 0;
+    }
+    .subtitle {
+      font-size: 20px;
+      color: #e67eae;
+      margin-bottom: 40px;
+    }
+    .section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .left-column {
+      flex: 1;
+    }
+    .right-image {
+      width: 180px;
+      height: auto;
+      margin-left: 40px;
+    }
+    .dot-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 25px;
+      color: #1e3a8a;
+    }
+    .dot-title::before {
+      content: "●";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #3b82f6;
+    }
+    p, li {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .highlight-orange {
+      color: #f39c12;
+    }
+    .cat-icon {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>遊戲設計</h1>
+<div class="subtitle">Game design</div>
+
+<div class="section">
+  <div class="left-column">
+    <div class="dot-title">劇情大綱</div>
+    <p>
+      米亞因心理壓力導致昏迷，進入記憶森林，與象徵性角色互動、回顧過往創傷，最終由玩家決定她是否面對現實。
+    </p>
+
+    <div class="dot-title">關卡全局</div>
+    <p>
+      五大主要區域，每區代表人生一階段：
+      <span class="highlight-orange">童年、青春、友情、創傷、選擇</span>。
+    </p>
+
+    <div class="dot-title">關卡說明</div>
+    <ul>
+      <li><strong>1. 晨曦樹林：</strong>色彩繽紛，<span class="highlight-orange">童年幻想與母親片段回憶</span>。</li>
+      <li><strong>2. 迷霧溪谷：</strong>朦朧不清，象徵<span class="highlight-orange">青春迷失與壓力</span>。</li>
+      <li><strong>3. 鏡影湖畔：</strong>水面映照過去，呈現<span class="highlight-orange">友情破裂與揭露</span>。</li>
+      <li><strong>4. 晦影高地：</strong>陰暗色調，主角面對深層<span class="highlight-orange">心理創傷</span>。</li>
+      <li><strong>5. 時鐘塔：</strong>決斷空間，選擇是否面對<span class="highlight-orange">現實來或永遠沉睡</span>。</li>
+    </ul>
+  </div>
+
+  <!-- 插圖區域，請更換 src 為你的圖片路徑 -->
+  <img class="right-image" src="插圖路徑.png" alt="主角插畫">
+</div>
+
+<!-- 貓咪插圖（左下角） -->
+<img class="cat-icon" src="黑貓插圖路徑.png" alt="黑貓圖示">
+
+</body>
+</html>
